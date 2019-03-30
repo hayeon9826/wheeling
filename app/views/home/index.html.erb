@@ -1,0 +1,35 @@
+
+<div id="hero-area" class="hero-area-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="contents text-center">
+          <h2 class="head-title wow fadeInUp">We Discover, Design & Build Digital <br> Presence of Businesses</h2>
+          <div class="header-button wow fadeInUp" data-wow-delay="0.3s">
+            <a href="#services" class="btn btn-common">Explore</a>
+          </div>
+        </div>
+        <div class="img-thumb text-center wow fadeInUp" data-wow-delay="0.6s">
+          <img class="img-fluid" src="assets/img/hero-1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<table>
+  <tr>
+    <th>장소</th>
+    <th>설명</<th>
+  </tr>
+  <tr>
+<% @posts.each do |f| %>
+  <td><%= f.title %></td>
+  <td><%= f.description %></td>
+<% end %>
+  </tr>
+</table>
+
+
+<script type="text/javascript" src= "http://openapi.seoul.go.kr:8088/51475a66706861793133354b70764650/xml/MgisRapidCharge/1/5/"></script>
