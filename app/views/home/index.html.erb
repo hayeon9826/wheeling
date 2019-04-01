@@ -18,15 +18,20 @@
 </div>
 
 
-<table>
+<table class="table">
+<thead class="thead-dark">
   <tr>
+    <th>사진</th>
     <th>장소</th>
     <th>설명</<th>
   </tr>
+</thead>
+<tbody>
   <tr>
 <% @posts.each do |f| %>
-  <td><%= f.title %></td>
-  <td><%= f.description %></td>
+    <td><%= f.avatar %></td>
+    <td><%= f.title %></td>
+    <td><%= f.description %></td>
 <% end %>
   </tr>
 </table>
